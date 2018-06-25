@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "810166532224",
+    "firebase_url": "https://steam-gaming-app.firebaseio.com",
+    "project_id": "steam-gaming-app",
+    "storage_bucket": "steam-gaming-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810166532224:android:edb617f5acdb275d",
+        "android_client_info": {
+          "package_name": "com.assignedpro.nj.steam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "810166532224-dku73oaigme0bt3h1aa20k2sk6lvk8dc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.assignedpro.nj.steam",
+            "certificate_hash": "04e100b821605bd23cd2b108c62e74952937ebec"
+          }
+        },
+        {
+          "client_id": "810166532224-20c0qb205na0n8apucdv9t93ihd1rs40.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "810166532224-20c0qb205na0n8apucdv9t93ihd1rs40.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChz4t2ny6XrZqbp5EBdrgVT9XwXfiLwUc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "810166532224-20c0qb205na0n8apucdv9t93ihd1rs40.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

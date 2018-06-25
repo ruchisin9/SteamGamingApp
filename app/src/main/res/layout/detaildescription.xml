@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CustomTextView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_150"
+        android:layout_marginTop="@dimen/dp_2"
+        android:id="@+id/game_background"
+        android:background="@drawable/gamelogin"
+        android:orientation="vertical">
+
+    </ImageView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_3"
+        android:layout_gravity="right"
+
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+android:layout_gravity="right"
+            android:layout_marginRight="@dimen/dp_10"
+            android:gravity="right"
+            android:layout_weight="7"
+            android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/job_complete"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_30"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_9"
+            android:background="@drawable/rect_with_orange_bg"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:text="Players Online"
+            android:textColor="@color/white"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/dp_10" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.assignedpro.nj.steam.utills.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/game_name"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_10"
+
+        CustomTextView:textStyle="8"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp_18"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/shaded_white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_2"
+                        android:orientation="vertical">
+
+                        <com.assignedpro.nj.steam.utills.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/game_about"
+                            android:text="-"
+                            CustomTextView:textStyle="1"
+                            android:layout_marginTop="@dimen/dp_4"
+                            android:layout_marginRight="@dimen/dp_15"
+                            android:textSize="@dimen/dp_12"
+                            android:textColor="@color/cardview_dark_background"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_1"
+                    android:alpha="0.4"
+                    android:background="#2f333f"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:orientation="horizontal">
+                        <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:orientation="vertical">
+                        <com.assignedpro.nj.steam.utills.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_2"
+                            android:text="Description"
+                            CustomTextView:textStyle="8"
+                            android:id="@+id/fuck_department"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dp_15"
+                            />
+
+                            <com.assignedpro.nj.steam.utills.CustomTextView
+                                android:id="@+id/game_detail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/dp_15"
+                                android:layout_marginTop="@dimen/dp_4"
+                                android:text=" - "
+                                CustomTextView:textStyle="1"
+                                android:textColor="@color/cardview_dark_background"
+                                android:textSize="@dimen/dp_12" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:alpha="0.4"
+                    android:background="#2f333f"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/dp_30"
+                        android:src="@drawable/date"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/dp_25" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:orientation="vertical">
+                        <com.assignedpro.nj.steam.utills.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/f_emailid"
+                            android:text="Release Date"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dp_15"
+                            />
+                        <com.assignedpro.nj.steam.utills.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12/01/1996"
+                            android:id="@+id/game_releasedate"
+                            android:layout_marginTop="@dimen/dp_4"
+                            android:textSize="@dimen/dp_12"
+                            CustomTextView:textStyle="1"
+                            android:textColor="@color/cardview_dark_background"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_1"
+                    android:alpha="0.4"
+                    android:background="#2f333f"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/layout_pro_start"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:id="@+id/iv_task_type"
+                            android:layout_width="@dimen/dp_20"
+                            android:layout_height="@dimen/dp_20"
+                            android:layout_marginTop="@dimen/dp_12"
+                            android:src="@drawable/developer" />
+                        <com.assignedpro.nj.steam.utills.CustomTextView
+                            android:id="@+id/task_type_header"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/dp_12"
+                            android:layout_toRightOf="@+id/iv_task_type"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:text="Developer"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="@dimen/sp_15"
+                            CustomTextView:textStyle="8" />
+
+                        <com.assignedpro.nj.steam.utills.CustomTextView
+                            android:id="@+id/game_developer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/task_type_header"
+                            android:layout_marginLeft="@dimen/dp_15"
+                            android:text="-"
+                            CustomTextView:textStyle="1"
+                            android:layout_marginRight="@dimen/dp_15"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:textColor="#606060"
+                            android:textSize="@dimen/sp_12" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:visibility="visible"
+                        android:layout_width="@dimen/dp_1"
+                        android:layout_height="@dimen/dp_35"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:background="@color/line_color"
+                        android:padding="@dimen/dp_5"></View>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp_50"
+                        android:gravity="center"
+
+                        android:layout_weight="1">
+                        <ImageView
+                            android:id="@+id/iv_assignee"
+                            android:layout_width="@dimen/dp_20"
+                            android:layout_height="@dimen/dp_20"
+                            android:layout_marginTop="@dimen/dp_12"
+                            android:src="@drawable/publisher" />
+                        <com.assignedpro.nj.steam.utills.CustomTextView
+                            android:id="@+id/assignee_header"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/dp_12"
+                            android:layout_toRightOf="@+id/iv_assignee"
+                            android:text="Publisher"
+                            android:textColor="@color/cardview_dark_background"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:textSize="@dimen/sp_15"
+                            CustomTextView:textStyle="8" />
+
+                        <com.assignedpro.nj.steam.utills.CustomTextView
+                            android:id="@+id/game_publisher"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/assignee_header"
+                            android:layout_marginLeft="@dimen/dp_15"
+                            android:text="-"
+                            android:layout_marginRight="@dimen/dp_15"
+                            CustomTextView:textStyle="1"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:textColor="#606060"
+                            android:textSize="@dimen/sp_12" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:visibility="invisible"
+                        android:layout_width="@dimen/dp_1"
+                        android:layout_height="@dimen/dp_35"
+                        android:layout_marginLeft="@dimen/dp_2"
+                        android:layout_marginRight="@dimen/dp_2"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:background="@color/white"
+                        android:padding="@dimen/dp_5"></View>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <com.assignedpro.nj.steam.utills.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:id="@+id/fuck_emailid"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:textColor="@color/black"
+                CustomTextView:textStyle="8"
+                android:text="System Requirements"
+                android:textSize="@dimen/dp_16"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:id="@+id/layout_pro_start"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_marginTop="@dimen/dp_6"
+                    android:gravity="center"
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"><!--
+                    <TextView
+                        android:id="@+id/task_type_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/dp_12"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dp_1"
+                        android:text=""
+                        android:textColor="@color/cardview_dark_background"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:textSize="@dimen/sp_10"
+                        CustomTextView:textStyle="8" />-->
+
+                    <com.assignedpro.nj.steam.utills.CustomTextView
+                        android:id="@+id/game_minimum"
+                        android:layout_width="@dimen/dp_130"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:layout_marginTop="@dimen/dp_2"
+                        CustomTextView:textStyle="1"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/dp_12" />
+
+                </RelativeLayout>
+                <View
+                    android:visibility="visible"
+                    android:layout_width="@dimen/dp_1"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@color/line_color"
+                    android:padding="@dimen/dp_5"></View>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_marginTop="@dimen/dp_6"
+                    android:gravity="center"
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"><!--
+                    <TextView
+                        android:id="@+id/assignee_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/dp_12"
+                        android:text="Recommended"
+                        android:padding="@dimen/dp_2"
+                        android:textColor="@color/cardview_dark_background"
+android:layout_marginLeft="@dimen/dp_15"
+                        android:textSize="@dimen/sp_10"
+                        CustomTextView:textStyle="8" />-->
+
+                    <com.assignedpro.nj.steam.utills.CustomTextView
+                        android:id="@+id/game_recommended"
+                        android:layout_width="@dimen/dp_130"
+                        CustomTextView:textStyle="1"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:layout_marginTop="@dimen/dp_2"
+                        android:textColor="#606060"
+                        android:textSize="@dimen/dp_12" />
+
+                </RelativeLayout>
+
+                <View
+                    android:visibility="invisible"
+                    android:layout_width="@dimen/dp_1"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:layout_marginRight="@dimen/dp_2"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@color/white"
+                    android:padding="@dimen/dp_5"></View>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

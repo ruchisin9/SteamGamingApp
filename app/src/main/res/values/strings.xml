@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Cairn</string>
+    <string name="crash_text">Crash Report:</string>
+</resources>
